@@ -1,0 +1,117 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header Section */
+.main-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.content-section {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 30%; /* Flex items take up 30% of the available width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    color: #333;
+}
+
+.content-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Layout for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content-section {
+        width: 80%; /* On mobile, the content sections take up more width */
+        margin: 10px auto;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Responsive Layout for Small Tablets */
+@media screen and (max-width: 1024px) {
+    .content-section {
+        width: 45%; /* For tablets, take up 45% of width */
+    }
+}
+
+/* Responsive Layout for Desktop (Default) */
+@media screen and (min-width: 1025px) {
+    .content-section {
+        width: 30%; /* For desktops, keep 30% width */
+    }
+}
